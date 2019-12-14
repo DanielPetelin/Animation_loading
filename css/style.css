@@ -5,10 +5,10 @@
     background-color: #039be5;
     overflow: hidden;
 
-    -webkit-border-radius: 8px;
-            border-radius: 8px;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
 
-    margin: 50px auto;
+    margin: 430px auto;
     box-shadow: 0px 3px 20px #0d47a1;
 }
 
@@ -30,6 +30,11 @@
     from {
         margin-left: 0px;
     }
+
+    50% {
+        opacity: 0;
+    }
+
     to {
         margin-left: -100px;
     }
