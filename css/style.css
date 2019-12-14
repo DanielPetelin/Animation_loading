@@ -1,8 +1,9 @@
 .container {
-    width: 600px;
+    width: 800px;
     height: 60px;
     border: 5px solid #fff;
     background-color: #039be5;
+    overflow: hidden;
 
     -webkit-border-radius: 10px;
             border-radius: 10px;
@@ -12,10 +13,24 @@
 }
 
 .bar {
-    width: 700px;
+    width: 900px;
     height: 60px;
     background: repeating-linear-gradient(45deg,
     rgba(255, 255, 255, .9) 0, rgba(255, 255, 255, .9)
     10px, transparent 10px, transparent 20px
     );
+
+    -webkit-animation: loading 3s ease infinite;
+       -moz-animation: loading 3s ease infinite;
+         -o-animation: loading 3s ease infinite;
+            animation: loading 3s ease infinite;
 } 
+
+@keyframes loading {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: -100px;
+    }
+}
